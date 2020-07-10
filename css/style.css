@@ -1,2 +1,18 @@
-/*font-family: 'Open Sans', sans-serif;*/
-/*font-family: 'Raleway', sans-serif;*/
+*{
+    box-sizing: border-box;
+}
+
+:root{
+ --open-sans: 'Open Sans', sans-serif;
+ --raleway: 'Raleway', sans-serif;
+}
+
+.container{
+    width: 1352px;
+    margin: 0 auto;
+}
+
+
+
+
+
