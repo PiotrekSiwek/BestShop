@@ -5,6 +5,11 @@
 :root{
  --open-sans: 'Open Sans', sans-serif;
  --raleway: 'Raleway', sans-serif;
+
+ --main-color: #08A6E4;
+ --acent-color1: #FB3B64;
+ --acent-color2: #55DFB4;
+ --shadow-color: rgba(7, 172, 230, .16)
 }
 
 .container{
@@ -12,7 +17,357 @@
     margin: 0 auto;
 }
 
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+/*---------------Header-----------------*/
 
 
+.header{
+    width:100%;
+    height: 70px;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.page-menu-logo{}
+
+.logo-link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-text{
+    color: var(--main-color);
+    font-family: var(--raleway);
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.page-menu{}
+
+.page-menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.page-menu-el{
+    padding: 0 50px;
+}
+
+.page-menu-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    font-family: var(--open-sans);
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;
+    padding: 27px 0;
+}
+
+.page-menu-link:hover{
+    border-bottom: 4px solid #08A6E4;
+    color: #000000;
+
+}
+
+/*-----------Welcome Banner---------------*/
+
+
+.welcome-banner{
+    width: 100%;
+}
+
+.banner-box{
+    text-align: center;
+}
+
+.banner-title{
+    font-family: var(--raleway);
+    font-size: 49px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 130px;
+}
+
+.banner-text{
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+
+.banner-link{
+    display: inline-block;
+    padding: 22px 155px;
+    border-radius: 40px;
+    background: var(--main-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.banner-logo{
+
+}
+
+/*-----------Statistics---------------*/
+
+
+.statistics{
+
+}
+.statistics-box{
+
+}
+.statistics-title{
+    font-family: var(--raleway);
+    font-size: 36px;
+    font-weight: 400;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.statistics-circle{
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle-one{
+    background: var(--acent-color1);
+}
+
+.circle-two{
+    background: var(--main-color);
+}
+
+.circle-three{
+    background: var(--acent-color2);
+}
+
+
+.circle-one::after{
+    content: url("../assets/Person.svg");
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.circle-two::after{
+    content: url("../assets/Eye.svg");
+    position: absolute;
+    left: 30%;
+    top: 25%;
+}
+
+.circle-three::after{
+    content: url("../assets/Catalog.svg");
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.statistics-result{
+    font-family: var(--open-sans);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.statistics-text{
+    color: #A5A5A5;
+    font-family: var(--raleway);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 120px;
+    cursor: pointer;
+}
+
+
+/*-----------Benefits---------------*/
+
+
+.benefits{
+    background: #F7F7F7;
+    padding-top: 80px;
+
+}
+
+.benefit-row{
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+.benefit-box{
+    width: 1120px;
+}
+
+.benefit-box-one-texts{
+    max-width: 40%;
+    margin-left: 35px;
+
+
+}
+.benefit-title{
+    font-family: var(--raleway);
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 65px;
+}
+
+.benefit-text{
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.benefit-line-one{
+    width: 320px;
+    height: 4px;
+    background: var(--acent-color1);
+    margin-top: 50px;
+}
+
+.benefit-line-two{
+    width: 320px;
+    height: 4px;
+    background: var(--main-color);
+    margin-top: 50px;
+}
+
+.benefit-line-three{
+    width: 320px;
+    height: 4px;
+    background: var(--acent-color2);
+    margin-top: 50px;
+}
+
+.benefit-box-one-img{
+    position: relative;
+    margin-right: 120px;
+}
+
+.benefit-picture {
+    width: 380px;
+    height: 100%;
+    background: url("../assets/Macbook.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+
+.benefit-square{
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    background: var(--acent-color1);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    z-index: 0;
+}
+
+
+.benefit-box-two-img{
+    position: relative;
+    margin-left: 70px;
+}
+
+.benefit-picture_2{
+    width: 420px;
+    height: 320px;
+    background: url("../assets/iPhone.png");
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+
+.benefit-circle{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: var(--main-color);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.benefit-box-two-texts{
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.benefit-title-place{
+    max-width: 60%;
+}
+
+
+.benefit-box-three{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+
+
+.benefit-box-three-picture{
+    width: 440px;
+    height: 370px;
+    background: var(--acent-color2) url("../assets/Trumpet.png");
+    background-size: 70%;
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefit-box-three-texts{
+    background: #FFFFFF;
+    max-width: 620px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.benefit-title-set{
+    max-width: 60%;
+}
+
+
+/*-----------Pricing---------------*/
